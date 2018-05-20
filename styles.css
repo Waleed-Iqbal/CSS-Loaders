@@ -9,6 +9,21 @@ tr {
   width: 130px;
 }
 
+#loaders-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  text-align: center;
+}
+
+#loaders-container span {
+  margin: 0 4% 4% 4%;
+}
+
+#loaders-container span p {
+  margin-top: 40px;
+}
+
 tbody tr td p {
   padding-left: 7%;
 }
@@ -141,5 +156,11 @@ tbody tr td p {
     transform: rotate(-360deg);
     box-shadow: 0 0 0px 1px lightskyblue;
   }
+}
+
+.loader-7 {
+  width: 80px;
+  height: 80px;
+  border: 3px solid blueviolet;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,12 +1,18 @@
-$dimension-value: 80px;
-@mixin width-height {
-    width: $dimension-value;
-    height: $dimension-value;
-}
+
+ $dimension-value: 80px;
+ @mixin width-height {
+     width: $dimension-value;
+     height: $dimension-value;
+ }
+
 
 @mixin custom-width-height($w, $h) {
     width: $w;
     height: $h;
+}
+
+body {
+    background-color: beige;
 }
 
 table {
@@ -18,6 +24,10 @@ tr {
     margin: 130px;
     height: 130px;
     width: 130px;
+}
+
+.width-height {
+   @include width-height();
 }
 
 #loaders-container {
@@ -32,7 +42,6 @@ tr {
         }
     }
 }
-
 
 tbody tr td p {
     padding-left: 7%;

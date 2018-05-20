@@ -2,9 +2,9 @@
 
 
 .loader-7 {
-    @include width-height;
-    border: 3px solid blueviolet;
-    
+    box-sizing: border-box;
+    border: 40px solid blueviolet;
+    content:"";
 }
 
 

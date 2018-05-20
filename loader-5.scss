@@ -1,0 +1,21 @@
+
+
+.loader-5 {
+    box-sizing: border-box;
+    @include width-height;
+    border-top: 4px solid lightskyblue;
+    border-bottom: 4px solid lightskyblue;
+    animation: loader-5 1.9s ease-in-out infinite;
+}
+
+@keyframes loader-5 {
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(-90deg);        
+    }
+    100% {
+        transform: rotate(90deg);                
+    }
+}

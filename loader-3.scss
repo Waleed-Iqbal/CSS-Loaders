@@ -1,0 +1,22 @@
+
+
+
+
+.loader-3 {
+    @include width-height;
+    border: 7px solid lightgray;
+    border-top-color: green;
+    border-bottom-color: green;
+    border-right-color: lightgray;
+    border-left-color: lightgray;
+    animation: loader-3 0.8s ease infinite;
+}
+
+@keyframes loader-3 {
+    to {
+        border-top-color: lightgray;
+        border-bottom-color: lightgray;
+        border-right-color: green;
+        border-left-color: green;
+    }
+}

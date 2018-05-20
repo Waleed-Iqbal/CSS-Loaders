@@ -1,0 +1,26 @@
+
+
+.loader-6 {
+    box-sizing: border-box;
+    @include width-height;
+    border-top: 4px solid lightskyblue;
+    border-bottom: 4px solid lightskyblue;
+    animation: loader-6 0.9s linear infinite;
+    box-shadow: 0 0 0px 1px lightskyblue;
+    border-radius: 50%;
+}
+
+@keyframes loader-6 {
+    0% {
+        transform: rotate(360deg);
+        box-shadow: 0 0 0px 1px lightskyblue;
+    }
+    50% {
+        transform: rotate(0deg);
+        box-shadow: 0 0 10px 10px lightskyblue;
+    }
+    100% {
+        transform: rotate(-360deg);
+        box-shadow: 0 0 0px 1px lightskyblue;
+    }
+}

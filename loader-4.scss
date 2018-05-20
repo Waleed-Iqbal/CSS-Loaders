@@ -1,0 +1,34 @@
+
+
+.loader-4 {
+    box-sizing: border-box;
+    @include width-height;
+    border-top: 10px solid salmon;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid salmon;
+    border-right: 10px solid transparent;
+    animation: loader-4 0.9s linear infinite;
+}
+
+@keyframes loader-4 {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.loader-4-inner {
+    @include custom-width-height(20px, 20px);
+    border-top: 10px solid transparent;
+    border-left: 10px solid salmon;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid salmon;
+    animation: loader-4-inner 0.4s linear infinite;
+    top: -50px;
+}
+
+@keyframes loader-4-inner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+

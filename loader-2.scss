@@ -1,9 +1,10 @@
 
+@import './globals.scss';
 
 .loader-2 {
     @include width-height;
     border: 4px solid lightgray;
-    animation: loader-2 1.8s linear infinite;
+    animation: loader-2 0.1s linear infinite;
 }
 
 @keyframes loader-2 {

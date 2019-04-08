@@ -2,7 +2,6 @@
 @import './globals.scss';
 
 .loader-1 {
-    content: "";
     @include width-height;
     border: 2px solid lightblue;
     border-radius: 50%;

@@ -3,11 +3,31 @@
 
 .kt-loader {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    
+    left: calc(50vw - 100px);
+    top: 40vh;
+    animation: kt-animation 2s linear infinite ;
+    animation-name: kt-animation;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
 }
 
+@keyframes kt-animation {
+    0%, 
+    15%, 
+    50%, 
+    65% {
+        transform:  rotateY(0deg) rotateX(0deg);
+    }
+    
+    10% {
+        transform:  rotateY(0deg) rotateX(90deg);
+    }
 
+    60% {
+        transform: rotateY(90deg) rotateX(0deg);
+    }
+}
 

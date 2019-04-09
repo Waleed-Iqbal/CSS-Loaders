@@ -35,8 +35,10 @@ tr {
     flex-wrap: wrap;
     padding-top: 5%;
     text-align: center;
-    span {
-        margin: 0 4% 4% 4%;
+    > span, img {
+        position: absolute;
+        left: calc(50vw - 100px);
+        top: 40vh;
         p {
             margin-top: 40px
         }

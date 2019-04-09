@@ -1,33 +1,24 @@
-
 @import './globals.scss';
 
 .kt-loader {
-    position: absolute;
-    left: calc(50vw - 100px);
-    top: 40vh;
-    animation: kt-animation 2s linear infinite ;
     animation-name: kt-animation;
     animation-duration: 2s;
-    animation-delay: 1s;
+    animation-delay: 0s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-fill-mode: both;
 }
 
 @keyframes kt-animation {
-    0%, 
-    15%, 
-    50%, 
-    65% {
-        transform:  rotateY(0deg) rotateX(0deg);
-    }
-    
-    10% {
-        transform:  rotateY(0deg) rotateX(90deg);
+    0%, 10%, 25%, 60%, 75%, 100% {
+        transform: rotateX(0deg) rotateY(0deg);        
     }
 
-    60% {
-        transform: rotateY(90deg) rotateX(0deg);
+    20% {
+        transform: rotateX(90deg) rotateY(0deg);
+    }
+
+    70% {
+        transform: rotateX(0deg) rotateY(90deg);
     }
 }
 

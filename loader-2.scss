@@ -3,11 +3,11 @@
 
 .loader-2 {
     @include width-height;
-    border: 0px solid lightgray;
-    animation: loader-2 1.2s linear infinite;
+    border-radius: 50%;
+    border-width: 0;
     border-top: 8px solid salmon;
     border-right: 4px solid $backgroundColor;
-    border-radius: 50%;
+    animation: loader-2 1s linear infinite;
 }
 
 
